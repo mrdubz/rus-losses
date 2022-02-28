@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Losses of the Russian army in the aggressive war with Ukraine</title>
+    <meta name="description" content="Report on the losses of the Russian army from the Ministry of Defense of Ukraine">
+    <meta property="og:title" content="Losses of the Russian army in the aggressive war with Ukraine" />
+    <meta property="og:description" content="Report on the losses of the Russian army from the Ministry of Defense of Ukraine" />
+    <meta property="og:image" content="https://rus-losses.org.ua//site-img.jpg" />
+    <link href="https://rus-losses.org.ua/css/styles.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://rus-losses.org.ua/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://rus-losses.org.ua/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://rus-losses.org.ua/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XR0VCVK5HP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XR0VCVK5HP');
+    </script>
+</head>
+<body class="bg-black text-white">
+<div class="app py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-7">
+                <header class="mb-5">
+                    <h1 class="fw-bold">Losses of the Russian army during <span>4</span>&nbsp;days of aggression in Ukraine</h1>
+                    <small class="block text-white-50">Report from the Ministry of Defense of Ukraine <span>6:00, 28 feb 2022</span>. Visualization - free citizens of a free country</small>
+                </header>
+                <div class="row">
+                    <div class="col-md-3 mb-4 mb-lg-5 planes">
+                        <h3 class="mb-2 fs-5 fw-bold"><span id="planes"></span> aircrafts</h3>
+                        <div id="planes_list" class="d-flex flex-wrap"></div>
+                    </div>
+                    <div class="col-md-3 mb-4 mb-lg-5 helicopters">
+                        <h3 class="mb-2 fs-5 fw-bold"><span id="helicopters"></span> helicopters</h3>
+                        <div id="helicopters_list" class="d-flex flex-wrap"></div>
+                    </div>
+                    <div class="col-md-6 mb-4 mb-lg-5 cannons">
+                        <h3 class="mb-2 fs-5 fw-bold"><span id="cannons"></span> cannons</h3>
+                        <div id="cannons_list" class="d-flex flex-wrap"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mb-4 mb-lg-5 grads">
+                        <h3 class="mb-2 fs-5 fw-bold"><span id="grads"></span> multiple rocket launchers</h3>
+                        <div id="grads_list" class="d-flex flex-wrap list"></div>
+                    </div>
+                    <div class="col-md-3 mb-4 mb-lg-5 drones">
+                        <h3 class="mb-2 fs-5 fw-bold"><span id="drones"></span> drones</h3>
+                        <div id="drones_list" class="d-flex flex-wrap"></div>
+                    </div>
+                    <div class="col-md-3 mb-4 mb-lg-5 ships">
+                        <h3 class="mb-2 fs-5 fw-bold"><span id="ships"></span> ships</h3>
+                        <div id="ships_list" class="d-flex flex-wrap"></div>
+                    </div>
+                    <div class="col-md-3 mb-4 mb-lg-5 ppo">
+                        <h3 class="mb-2 fs-5 fw-bold"><span id="ppo"></span> air defense systems</h3>
+                        <div id="ppo_list" class="d-flex flex-wrap"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-4 mb-lg-5 tanks">
+                        <h3 class="mb-2 fs-5 fw-bold"><span id="tanks"></span> tanks</h3>
+                        <div id="tanks_list" class="d-flex flex-wrap"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-4 mb-lg-5 bmp">
+                        <h3 class="mb-2 fs-5 fw-bold"><span id="bmp"></span> armored cars</h3>
+                        <div id="bmp_list" class="d-flex flex-wrap "></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-4 mb-lg-5 trucks">
+                        <h3 class="mb-2 fs-5 fw-bold"><span id="trucks"></span> trucks</h3>
+                        <div id="trucks_list" class="d-flex flex-wrap list"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-4 mb-lg-5 tankers">
+                        <h3 class="mb-2 fs-5 fw-bold"><span id="tankers"></span> tankers</h3>
+                        <div id="tankers_list" class="d-flex flex-wrap"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-5 pt-lg-2 soldiers">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="mb-2 fs-5 fw-bold"><span id="soldiers"></span>+ soldiers <span class="fw-normal text-white-50">(difficult to define accurately)</span></h3>
+                        <div id="soldiers_list" class="d-flex flex-wrap"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lang d-flex flex-column">
+        <a class="lang__item" href="/">
+            🇺🇦
+        </a>
+        <a class="lang__item active" href="/ru">
+            🇷🇺
+        </a>
+        <a class="lang__item" href="/en">
+            🇺🇲
+        </a>
+    </div>
+</div>
+<script async src="https://rus-losses.org.ua/app.js"></script>
+</body>
+</html>

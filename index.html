@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Втрати свінособачої армії за 4 доби зухвалої війни проти України</title>
+    <meta name="description" content="Зведення про втрати російських військ від Міністерства Оборони України">
+    <meta property="og:title" content="Втрати свінособачої армії за 4 доби зухвалої війни проти України" />
+    <meta property="og:description" content="Зведення про втрати російських військ від Міністерства Оборони України" />
+    <meta property="og:image" content="https://rus-losses.org.ua/site-img.jpg" />
+    <link href="https://rus-losses.org.ua/css/styles.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://rus-losses.org.ua/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://rus-losses.org.ua/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://rus-losses.org.ua/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XR0VCVK5HP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XR0VCVK5HP');
+    </script>
+</head>
+<body class="bg-black text-white">
+<div class="app py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-7">
+                <header class="mb-5">
+                    <h1 class="fw-bold">Втрати свінособачої армії за <span>4</span> доби зухвалої війни проти України</h1>
+                    <small class="block text-white-50">Дані від Міністерства Оборони України на <span>6:00, 28 лютого 2022</span>. Візуалізували вільні громадяни вільної країни</small>
+                </header>
+                <div class="row">
+                    <div class="col-md-3 mb-4 mb-lg-5 planes">
+                        <h3 class="mb-2 fs-5 fw-bold"><span id="planes"></span> літаків</h3>
+                        <div id="planes_list" class="d-flex flex-wrap"></div>
+                    </div>
+                    <div class="col-md-3 mb-4 mb-lg-5 helicopters">
+                        <h3 class="mb-2 fs-5 fw-bold"><span id="helicopters"></span> гелікоптерів</h3>
+                        <div id="helicopters_list" class="d-flex flex-wrap"></div>
+                    </div>
+                    <div class="col-md-6 mb-4 mb-lg-5 cannons">
+                        <h3 class="mb-2 fs-5 fw-bold"><span id="cannons"></span> гармати</h3>
+                        <div id="cannons_list" class="d-flex flex-wrap"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mb-4 mb-lg-5 grads">
+                        <h3 class="mb-2 fs-5 fw-bold"><span id="grads"></span> град</h3>
+                        <div id="grads_list" class="d-flex flex-wrap list"></div>
+                    </div>
+                    <div class="col-md-3 mb-4 mb-lg-5 drones">
+                        <h3 class="mb-2 fs-5 fw-bold"><span id="drones"></span> безпілотники</h3>
+                        <div id="drones_list" class="d-flex flex-wrap"></div>
+                    </div>
+                    <div class="col-md-3 mb-4 mb-lg-5 ships">
+                        <h3 class="mb-2 fs-5 fw-bold"><span id="ships"></span> судна</h3>
+                        <div id="ships_list" class="d-flex flex-wrap"></div>
+                    </div>
+                    <div class="col-md-3 mb-4 mb-lg-5 ppo">
+                        <h3 class="mb-2 fs-5 fw-bold"><span id="ppo"></span> засобів ППО</h3>
+                        <div id="ppo_list" class="d-flex flex-wrap"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-4 mb-lg-5 tanks">
+                        <h3 class="mb-2 fs-5 fw-bold"><span id="tanks"></span> танк</h3>
+                        <div id="tanks_list" class="d-flex flex-wrap"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-4 mb-lg-5 bmp">
+                        <h3 class="mb-2 fs-5 fw-bold"><span id="bmp"></span> броньованих машин</h3>
+                        <div id="bmp_list" class="d-flex flex-wrap "></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-4 mb-lg-5 trucks">
+                        <h3 class="mb-2 fs-5 fw-bold"><span id="trucks"></span> автомобіль</h3>
+                        <div id="trucks_list" class="d-flex flex-wrap list"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-4 mb-lg-5 tankers">
+                        <h3 class="mb-2 fs-5 fw-bold"><span id="tankers"></span> цистерн</h3>
+                        <div id="tankers_list" class="d-flex flex-wrap"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-5 pt-lg-2 soldiers">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="mb-2 fs-5 fw-bold"><span id="soldiers"></span>+ солдат <span class="fw-normal text-white-50">(точніше складно сказати)</span></h3>
+                        <div id="soldiers_list" class="d-flex flex-wrap"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lang d-flex flex-column">
+        <a class="lang__item active" href="/">
+            🇺🇦
+        </a>
+        <a class="lang__item" href="/ru">
+            🇷🇺
+        </a>
+        <a class="lang__item" href="/en">
+            🇺🇲
+        </a>
+    </div>
+</div>
+<script async src="https://rus-losses.org.ua/app.js"></script>
+</body>
+</html>
