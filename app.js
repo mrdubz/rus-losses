@@ -1,16 +1,16 @@
 const svinosobaki = {
-  "planes": 165,
-  "helicopters": 146,
-  "cannons": 376,
-  "grads": 127,
-  "drones": 148,
+  "planes": 172,
+  "helicopters": 151,
+  "cannons": 393,
+  "grads": 136,
+  "drones": 166,
   "ships": 8,
-  "ppo": 66,
-  "tanks": 773,
-  "bmp": 2002,
-  "trucks": 1471,
+  "ppo": 67,
+  "tanks": 829,
+  "bmp": 2118,
+  "trucks": 1508,
   "tankers": 76,
-  "soldiers": 20300
+  "soldiers": 21000
 }
 
 for (const key in svinosobaki) {
